@@ -4,7 +4,7 @@
 	required = true
 [user]
 	name = Michał Lower
-	email = michal@smablo.com
+	email = keton22@gmail.com
 	signingkey = 4A9AB1BB988BBECF
 [diff]
 	tool = vsdiffmerge
@@ -23,8 +23,6 @@
 	trustexitcode = true
 [mergetool "vsdiffmerge"]
 	keepbackup = false
-
-
 [push]
 	default = simple
 [gui]
@@ -36,5 +34,3 @@
 	program = C:/Program Files (x86)/GnuPG/bin/gpg.exe
 [commit]
 	gpgsign = true
-[winUpdater]
-	recentlySeenVersion = 2.16.3.windows.1
