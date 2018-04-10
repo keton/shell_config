@@ -9,7 +9,7 @@
 1. reboot
 
 ## GnuPG smartcard daemon auto start
-1. install [GnuPG for Windows](), select GPG and Kleopatra
+1. install [Gpg4Win](https://www.gpg4win.org/), select GPG and Kleopatra
 1. copy contents of `gpg_config` folder to `%USERPROFILE%\AppData\Roaming\gnupg`
 1. in command line run `gpg --card-edit`, execute `fetch` command to download card's certificate from keyserver
 1. copy `start-gpg-agent.cmd` to user profile directory - `%USERPROFILE%`
