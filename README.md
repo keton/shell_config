@@ -28,3 +28,7 @@ Copy `cygwin` folder contents to cygwin home directory `C:\cygwin64\home\%USERNA
 1. Extract [cmder mini](https://github.com/cmderdev/cmder/releases) package to `c:\cmder`
 1. Import `conemu-settings.xml` in cmder settings panel
 
+## Microsoft Terminal
+
+1. Install from [MS Store](https://www.microsoft.com/en-us/p/windows-terminal-preview/9n0dx20hk701?SilentAuth=1&wa=wsignin1.0&activetab=pivot:overviewtab)
+1. copy `ms_terminal\profiles.json` to `%localappdata%\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\`. Alternatively select 'Settings' from app menu to open correct `profiles.json` location
