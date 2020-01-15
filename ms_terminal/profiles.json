@@ -4,14 +4,15 @@
     "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
     "initialPosition": "0,0",
     "launchMode": "maximized",
+    "requestedTheme": "dark",
+    "copyOnSelect": true,
+    "tabWidthMode": "titleLength",
     "keybindings": [
       {
         "command": "paste",
         "keys": [ "shift+insert" ]
       }
-    ],
-    "requestedTheme": "dark",
-    "copyOnSelect": true
+    ]
   },
   "profiles": {
     "defaults": {
