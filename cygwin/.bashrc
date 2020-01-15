@@ -202,6 +202,8 @@ export PATH=$HOME/bin:$PATH
 #fancy ls colors
 eval `dircolors -b ~/solarized.dircolors`
 
+export PS1='\[\e]0;$PWD\a\]\n\[\e[33m\]$PWD\[\e[0m\]\n\$ '
+
 # Save timestamp in the history file
 HISTTIMEFORMAT="%F %T "
 # Don't store duplicates
