@@ -47,5 +47,6 @@
         "source": "Windows.Terminal.Azure"
       }
     ]
-  }
+  },
+  "schemes": []
 }
