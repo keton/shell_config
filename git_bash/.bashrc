@@ -10,7 +10,7 @@ export GIT_PS1_STATESEPARATOR=''          # No space between branch and index st
 export GIT_PS1_DESCRIBE_STYLE="describe"  # detached HEAD style:
 export GIT_PS1_SHOWCOLORHINTS=1			  # use colors
 
-export PROMPT_COMMAND='__git_ps1 "\[\033[01;36m\]\w\[\033[00m\]" " \\\$ "'
+export PROMPT_COMMAND='__git_ps1 "\[\033]0;Bash:$PWD\007\]\n\[\033[33m\]$PWD\[\033[00m\]" "\[\033[0m\]\n$ "'
 export PATH='/c/Program Files (x86)/GnuPG/bin':'/c/php':$PATH
 
 #fancy ls colors
