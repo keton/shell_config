@@ -11,7 +11,7 @@ export GIT_PS1_DESCRIBE_STYLE="describe"  # detached HEAD style:
 export GIT_PS1_SHOWCOLORHINTS=1			  # use colors
 
 export PROMPT_COMMAND='__git_ps1 "\[\033]0;Bash:$PWD\007\]\n\[\033[33m\]$PWD\[\033[00m\]" "\[\033[0m\]\n$ "'
-export PATH='/c/Program Files (x86)/GnuPG/bin':'/c/php':$PATH
+export PATH='/c/Program Files (x86)/GnuPG/bin':$PATH
 
 #fancy ls colors
 eval `dircolors -b ~/solarized.dircolors`
