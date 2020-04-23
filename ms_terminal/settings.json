@@ -1,19 +1,19 @@
 {
   "$schema": "https://aka.ms/terminal-profiles-schema",
-  "globals": {
-    "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-    "initialPosition": "0,0",
-    "launchMode": "maximized",
-    "requestedTheme": "dark",
-    "copyOnSelect": true,
-    "tabWidthMode": "titleLength",
-    "keybindings": [
-      {
-        "command": "paste",
-        "keys": [ "shift+insert" ]
-      }
-    ]
-  },
+  "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+  "initialPosition": "0,0",
+  "launchMode": "maximized",
+  "theme": "dark",
+  "copyOnSelect": true,
+  "tabWidthMode": "titleLength",
+  "keybindings": [
+    {
+      "command": "paste",
+      "keys": [
+        "shift+insert"
+      ]
+    }
+  ],
   "profiles": {
     "defaults": {
       "colorScheme": "Campbell",
@@ -24,7 +24,7 @@
     },
     "list": [
       {
-        "commandline": "C:\\Program Files\\Git\\bin\\bash.exe --login",  
+        "commandline": "C:\\Program Files\\Git\\bin\\bash.exe --login",
         "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
         "icon": "C:\\Program Files\\Git\\mingw64\\share\\git\\git-for-windows.ico",
         "name": "Git Bash"
