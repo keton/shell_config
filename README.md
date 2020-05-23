@@ -32,3 +32,9 @@ Copy `cygwin` folder contents to cygwin home directory `C:\cygwin64\home\%USERNA
 
 1. Install from [MS Store](https://www.microsoft.com/en-us/p/windows-terminal-preview/9n0dx20hk701?SilentAuth=1&wa=wsignin1.0&activetab=pivot:overviewtab)
 1. copy `ms_terminal\profiles.json` to `%localappdata%\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\`. Alternatively select 'Settings' from app menu to open correct `profiles.json` location
+
+## NZXT Hue Ambient kit control
+1. Install https://github.com/jonasmalacofilho/liquidctl/releases 1.3.3 or later. 
+1. Add liquidctl installation directory to system PATH
+1. copy `leds-on.cmd` and `leds-off.cmd` to user profile directory - `%USERPROFILE%`
+1. in group policy editor go `User configuration` --> `Windows system settings` --> `Scripts`. Add `leds-on.cmd` to login scripts and `leds-off.cmd` to logout scripts
