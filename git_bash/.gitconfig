@@ -6,31 +6,19 @@
 	name = Michał Lower
 	email = keton22@gmail.com
 	signingkey = 4A9AB1BB988BBECF
-[diff]
-	tool = vsdiffmerge
-[difftool]
-	prompt = true
-[difftool "vsdiffmerge"]
-	cmd = \"C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer\\vsdiffmerge.exe\" \"$LOCAL\" \"$REMOTE\" //t
-[difftool "vsdiffmerge"]
-	keepbackup = false
 [merge]
-	tool = vsdiffmerge
-[mergetool]
-	prompt = true
-[mergetool "vsdiffmerge"]
-	cmd = \"C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer\\vsdiffmerge.exe\" \"$REMOTE\" \"$LOCAL\" \"$BASE\" \"$MERGED\" //m
-	trustexitcode = true
-[mergetool "vsdiffmerge"]
-	keepbackup = false
+    tool = vscode
+[mergetool "vscode"]
+    cmd = code --wait $MERGED
+[diff]
+    tool = vscode
+[difftool "vscode"]
+    cmd = code --wait --diff $LOCAL $REMOTE
 [push]
 	default = simple
-[gui]
-	recentrepo = C:/seguro
-[credential]
-[core]
-	editor = 'C:\\Program Files (x86)\\Notepad++\\notepad++.exe' -multiInst -notabbar -nosession -noPlugin
 [gpg]
 	program = C:/Program Files (x86)/GnuPG/bin/gpg.exe
 [commit]
 	gpgsign = true
+[core]
+	editor = code --wait
