@@ -1,0 +1,60 @@
+{
+    "remote.SSH.enableAgentForwarding": true,
+    "remote.SSH.enableDynamicForwarding": true,
+    "window.zoomLevel": 0.2,
+    "workbench.iconTheme": "vscode-icons",
+    "vsicons.dontShowNewVersionMessage": true,
+    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+    "terminal.integrated.shellArgs.windows": [
+        "--login",
+        "-i"
+    ],
+    "files.associations": {
+        "SConstruct": "python",
+        "SConscript.*": "python",
+        "SConscript": "python",
+        "Makefile.*": "makefile",
+        "*.c": "c",
+        "*.h": "c"
+    },
+    "git.autofetch": true,
+    "remote.SSH.useLocalServer": false,
+    "remote.SSH.remotePlatform": {
+        "hass": "linux",
+        "mateusz-pi": "linux"
+    },
+    "remote.SSH.path": "C:\\Program Files\\Git\\usr\\bin\\ssh.exe",
+
+    "[c]": {
+        "editor.insertSpaces": false,
+        "editor.tabSize": 4,
+        "editor.detectIndentation": false,
+        "editor.quickSuggestions": {
+            "other": false,
+            "comments": false,
+            "strings": false
+        }
+    },
+    "C_Cpp.intelliSenseEngine": "Default",
+    "C_Cpp.autoAddFileAssociations": false,
+	"C_Cpp.autocomplete": "Default",
+    "C_Cpp.errorSquiggles": "Enabled",
+    "todo-tree.tree.showScanModeButton": false,
+    "todo-tree.highlights.customHighlight": {
+        "TODO": {
+            "icon": "check",
+            "type": "whole-line",
+            "gutterIcon": true,
+            "foreground": "#00ffff",
+            "background": "#006400",
+            "iconColour": "green",
+        },
+        "FIXME": {
+            "foreground": "#00ffff",
+            "background": "red",
+            "iconColour": "orange",
+            "gutterIcon": true,
+            "type": "whole-line"
+        }
+    }
+}
