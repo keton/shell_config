@@ -1,8 +1,9 @@
 @echo off
 
+REM NZXT ambient hue 2 kit
 set DEVNAME=ambient
-set DRIVER=hid
+liquidctl --match %DEVNAME% set sync color off
 
-REM liquidctl --hid %DRIVER% initialize all
-liquidctl --hid %DRIVER% --match %DEVNAME% set led1 color off
-liquidctl --hid %DRIVER% --match %DEVNAME% set led2 color off
+REM Gigabyte motherboard lighting
+set DEVNAME=gigabyte
+liquidctl --match %DEVNAME% set sync color off
