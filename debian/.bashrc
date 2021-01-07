@@ -16,3 +16,9 @@ export GIT_PS1_DESCRIBE_STYLE="describe"  # detached HEAD style:
 export GIT_PS1_SHOWCOLORHINTS=1                   # use colors
 
 export PROMPT_COMMAND='__git_ps1 "\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w" "\[\033[00m\]\n\$ "'
+
+# set X forwarding if in SSH session
+if [ -n "$SSH_CONNECTION" ]; then
+        CLIENT_IP=`echo $SSH_CONNECTION | cut -d' ' -f1`:0
+        export DISPLAY="$CLIENT_IP"
+fi
