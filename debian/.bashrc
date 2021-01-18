@@ -21,4 +21,7 @@ export PROMPT_COMMAND='__git_ps1 "\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_
 if [ -n "$SSH_CONNECTION" ]; then
         CLIENT_IP=`echo $SSH_CONNECTION | cut -d' ' -f1`:0
         export DISPLAY="$CLIENT_IP"
+
+        # this fixes 'libGL error: No matching fbConfigs or visuals found' in ssh X sessions
+        export LIBGL_ALWAYS_INDIRECT=1
 fi
