@@ -1,9 +1,9 @@
 @echo off
 
 REM NZXT ambient hue 2 kit
-set DEVNAME=ambient
-liquidctl --match %DEVNAME% set sync color off
+set SERIALS=6D86435A545,87913F68495
+FOR %%S IN (%SERIALS%) DO liquidctl --serial %%S set sync color off
 
 REM Gigabyte motherboard lighting
-set DEVNAME=gigabyte
-liquidctl --match %DEVNAME% set sync color off
+set PRODUCT=5702
+liquidctl --product %PRODUCT% set sync color off
