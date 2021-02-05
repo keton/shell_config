@@ -20,7 +20,8 @@
       "fontFace": "Iosevka Term",
       "fontSize": 15,
       "background": "#012456",
-      "padding": "0, 0, 0, 0"
+      "padding": "0, 0, 0, 0",
+      "bellStyle": "none"
     },
     "list": [
       {
