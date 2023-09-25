@@ -22,3 +22,39 @@
 	gpgsign = true
 [core]
 	editor = code --wait
+
+# options below require https://github.com/dandavison/delta helper tool
+[pager]
+	diff = delta
+	log = delta
+	reflog = delta
+	show = delta
+
+[interactive]
+	diffFilter = delta --color-only
+
+[delta]
+    features = decorations theme-tweaks
+    line-numbers = true
+    diff-so-fancy = true
+    navigate = true
+    syntax-theme = Solarized (dark)
+
+[delta "decorations"]
+    commit-style = bright-green
+    commit-decoration-style = bold green ul
+    file-style = bright-green
+    file-decoration-style = bold green ul
+    hunk-header-file-style = bright-blue
+    hunk-header-line-number-style = bright-blue
+    hunk-header-decoration-style = blue box
+
+[delta "theme-tweaks"]
+    whitespace-error-style = 22 reverse
+    line-numbers-minus-style = bright-red
+    plus-style = bright-green
+    plus-non-emph-style = bright-green
+    minus-style = bright-red
+    minus-non-emph-style = bright-red
+
+
